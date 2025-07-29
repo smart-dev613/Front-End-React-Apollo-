@@ -1,0 +1,48 @@
+.groupContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  // gap: 20px;
+}
+
+.formContainer {
+  .formDiv {
+    border: blue solid 3px;
+  }
+
+  .formHeader {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: end;
+    padding: 0 15px;
+
+    
+  }
+  .formBody {
+    display: 'flex';
+    flex-direction: 'column';
+    gap: 20;
+    justify-content: 'start';
+    align-items: 'stretch';
+  }
+}
+
+.column.left {
+  width: 100px;
+  flex: 0 0 100px;
+}
+.column.right {
+  width: 40px;
+  flex: 0 0 40px;
+}
+.column.center {
+  flex-grow: 1;
+}
+
+.collapsibleContainer::after{
+  font-size: 25px;
+  font-weight: bold;
+}

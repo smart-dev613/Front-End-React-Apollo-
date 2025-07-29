@@ -1,0 +1,63 @@
+export enum COMPANY_PREFERENCE {
+  LOGO = 'LOGO',
+  NAME = 'NAME',
+  PROFILE = 'PROFILE',
+  KEYWORDS = 'KEYWORDS',
+  IMAGES = 'IMAGES',
+  WEBSITE = 'WEBSITE',
+  EMAIL = 'EMAIL',
+  LANDLINE = 'LANDLINE',
+  CATEGORY = 'CATEGORY',
+  ADDRESS = 'ADDRESS',
+  ZIPCODE = 'ZIPCODE',
+  COUNTRY = 'COUNTRY',
+  RATING = 'RATING',
+}
+
+export enum ATTENDEE_PREFERENCE {
+  PROFILE_PICTURE = 'PROFILE_PICTURE',
+  NAME = 'NAME',
+  PROFILE = 'PROFILE',
+  KEYWORDS = 'KEYWORDS',
+  WEBSITE = 'WEBSITE',
+  EMAIL = 'EMAIL',
+  MOBILE = 'MOBILE',
+  GENDER = 'GENDER',
+  DATE_OF_BIRTH = 'DATE_OF_BIRTH',
+  ADDRESS = 'ADDRESS',
+  ZIPCODE = 'ZIPCODE',
+  COUNTRY = 'COUNTRY',
+  RATING = 'RATING',
+}
+
+export const CompanyPreferenceList: any = [
+  { label: 'Logo', value: COMPANY_PREFERENCE.LOGO, disable: true},
+  { label: 'Company', value: COMPANY_PREFERENCE.NAME, disable: true},
+  { label: 'Profile', value: COMPANY_PREFERENCE.PROFILE, disable: true},
+  { label: 'Keywords', value: COMPANY_PREFERENCE.KEYWORDS, disable: true},
+  { label: 'Images', value: COMPANY_PREFERENCE.IMAGES },
+  { label: 'Company Website', value: COMPANY_PREFERENCE.WEBSITE },
+  { label: 'Company Email', value: COMPANY_PREFERENCE.EMAIL },
+  { label: 'Company Landline', value: COMPANY_PREFERENCE.LANDLINE },
+  { label: 'Company Category', value: COMPANY_PREFERENCE.CATEGORY },
+  { label: 'Address', value: COMPANY_PREFERENCE.ADDRESS },
+  { label: 'Zipcode/Postcode', value: COMPANY_PREFERENCE.ZIPCODE },
+  { label: 'Country', value: COMPANY_PREFERENCE.COUNTRY },
+  { label: 'Rating', value: COMPANY_PREFERENCE.RATING },
+]
+
+export const AttendeePreferenceList: any = [
+  { label: 'Profile Picture', value: ATTENDEE_PREFERENCE.PROFILE_PICTURE, disable: true },
+  { label: 'First Name + Last Name', value: ATTENDEE_PREFERENCE.NAME, disable: true },
+  { label: 'Profile', value: ATTENDEE_PREFERENCE.PROFILE, disable: true },
+  { label: 'Keywords', value: ATTENDEE_PREFERENCE.KEYWORDS, disable: true },
+  { label: 'Website', value: ATTENDEE_PREFERENCE.WEBSITE },
+  { label: 'Email', value: ATTENDEE_PREFERENCE.EMAIL },
+  { label: 'Mobile', value: ATTENDEE_PREFERENCE.MOBILE },
+  { label: 'Gender', value: ATTENDEE_PREFERENCE.GENDER },
+  { label: 'Date of Birth', value: ATTENDEE_PREFERENCE.DATE_OF_BIRTH },
+  { label: 'Address', value: ATTENDEE_PREFERENCE.ADDRESS },
+  { label: 'Zipcode/Postcode', value: ATTENDEE_PREFERENCE.ZIPCODE },
+  { label: 'Country', value: ATTENDEE_PREFERENCE.COUNTRY },
+  { label: 'Rating', value: ATTENDEE_PREFERENCE.RATING },
+]

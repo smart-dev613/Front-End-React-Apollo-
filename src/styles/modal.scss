@@ -1,0 +1,40 @@
+.popup {
+    
+&__container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba($color: #000000, $alpha: .6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all .5s linear;
+    z-index: 9999;
+    &-active{
+        transform: scale(1);
+         transition: all .5s linear;
+         
+    }
+}
+&__box{
+    display:  grid;
+    place-items: center;
+   width: 50%;
+    height: 60vh;
+    border-radius: .5rem;
+    background-color: #fff;
+    transform: scale(0);
+     transition: all .5s linear;
+     @media only screen and (max-width: 576px) {
+     width: 95%;
+     }
+
+     &-active{
+ transform: scale(1);
+         transition: all .5s linear;
+     }
+}
+  }

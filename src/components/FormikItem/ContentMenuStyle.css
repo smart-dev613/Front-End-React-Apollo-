@@ -1,0 +1,28 @@
+.m-submenu{
+    position: relative;
+}
+
+@media only screen and (min-width:350px) and (max-width:490px) {
+    .dMobile{
+        display:flex!important;
+        flex-wrap: wrap;
+    }
+
+    .m-submenu{
+        position: relative!important;
+        left: 125px!important;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .d-dropdown{
+        display: none!important;
+    }
+}
+
+@media only screen and (min-width:450px){
+    .m-dropdown{
+        display: none!important;
+    }
+}
+

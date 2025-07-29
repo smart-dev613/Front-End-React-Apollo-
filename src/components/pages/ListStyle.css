@@ -1,0 +1,18 @@
+.price-tag{
+    display:flex;
+    flex-direction:row; 
+    justify-content: space-between;
+}
+
+@media only screen and (min-width:330px) and (max-width:575px){
+    .price-tag{
+        display:flex;
+        flex-direction:column; 
+        /* justify-content: space-between; */
+    }
+
+    .mView{
+        display: flex;
+        flex-direction: row;
+    }
+}

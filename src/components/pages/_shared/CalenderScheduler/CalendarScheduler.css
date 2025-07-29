@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
+
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  background-color: #fbfcfd;
+}
+
+.hero-background {
+  height: 180px;
+  padding: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ef6234;
+}
+
+.content-avatar {
+  border-radius: 1rem;
+}
+
+.content-title {
+  color: #fff;
+  font-size: 1rem;
+}
+.select-header {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.outerdiv-selectedDate {
+  width: 100%;
+  /* height: 670px; */
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30px;
+
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+.text-lg {
+  font-size: 1.5rem;
+}
+.text-base {
+  font-size: 1rem;
+}
+
+.flex-gap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.description-info {
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e9e9e9;
+  border-radius: 8px;
+  box-shadow: 20px 20px 50px #e9e9e9;
+  padding: 20px;
+}
+
+.bottom-calender-booking {
+  background-color: #ffffff;
+  border: 1px solid #e9e9e9;
+  border-radius: 8px;
+  padding: 20px 30px;
+  box-shadow: 20px 20px 50px #e9e9e9;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.calender-container {
+  width: 100%;
+  height: 350px;
+}
+
+.selected-date {
+  color: rgb(68, 68, 68);
+  padding: 5px;
+  margin-top: -10px;
+  margin-left: 15px;
+}
+
+.availability-container {
+  display: grid;
+  /* align-items: center;
+  justify-content: flex-start; */
+  width: 100%;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+}
+.book-info {
+  width: 100%;
+}
+
+.setTime {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 8px 0;
+  text-align: center;
+  background-color: white;
+  /* border: .5px solid #67a6ff; */
+  border: 1px solid #ef6234;
+  /* width: 80%; */
+  border-radius: 4px;
+  /* color: #0e70fb; */
+  color: #ef6234;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+}
+
+.setTime:hover {
+  /* border: 2px solid #0e70fb; */
+  border: 2px solid #ef6234;
+}
+
+.display-none {
+  display: none;
+}
+
+.booked-container {
+  margin-top: 1rem;
+}
+
+.booked-list {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media (min-width: 640px) {
+  /* .calender-container{
+    height: 50px;
+
+} */
+}
+
+@media (min-width: 1024px) {
+  .book-info {
+    width: 300px;
+  }
+  /* .availability-container {
+ width: 250px;
+} */
+  .outerdiv-selectedDate {
+    width: 700px;
+  }
+
+  .bottom-calender-booking {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  .calender-container {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+.fc .fc-toolbar-title {
+  font-size: 18px !important;
+}
+@media (min-width: 1280px) {
+  .book-info {
+    width: 400px;
+  }
+
+  .outerdiv-selectedDate {
+    width: 850px;
+  }
+}
+
+.fc .fc-daygrid-day-number {
+  font-size: 12px;
+}
+
+.fc .fc-daygrid-day-top {
+  flex-direction: row !important;
+  margin-left: 2px;
+}
+
+.fc .fc-col-header-cell-cushion {
+  font-size: 14px;
+}
+
+.fc-direction-ltr .fc-daygrid-event.fc-event-end {
+  font-size: 10px;
+}
+
+/* Calendar header styles */
+.fc .fc-toolbar.fc-header-toolbar {
+  margin-bottom: 8px;
+}
+
+.fc-header-toolbar .fc-toolbar-chunk {
+  display: flex;
+  align-items: center;
+}
+
+.fc .fc-button-group {
+  gap: 2px;
+}
+
+/* Calendar body styles */
+
+.fc .fc-col-header-cell-cushion {
+  font-size: 12px;
+}
+
+.fc .fc-daygrid-more-link {
+  font-size: 9px;
+}
+
+/* Adjust day cell padding */
+.fc .fc-daygrid-day-frame {
+  padding: 4px !important;
+}
+
+.fc .fc-button {
+  font-size: 12px !important; /* Reduced from 10px */
+  padding: 4px 8px !important; /* Reduced padding */
+  height: auto !important;
+  line-height: 1 !important;
+}
+
+/* Specific styles for prev, next, and today buttons */
+.fc .fc-prev-button,
+.fc .fc-next-button,
+.fc .fc-today-button {
+  width: 60px !important; /* Set a fixed width */
+  padding: 4px !important;
+  color: #ef6234;
+  background-color: #ef633438;
+}
+
+.fc .fc-today-button {
+  width: auto !important; /* Allow Today button to size based on content */
+  padding: 4px 8px !important;
+  color: #ef6234;
+  background-color: #ef633438;
+}
+
+.fc .fc-col-header-cell-cushion {
+  font-size: 12px;
+}
+
+.fc .fc-daygrid-more-link {
+  font-size: 9px;
+}
+
+/* Adjust day cell padding */
+.fc .fc-daygrid-day-frame {
+  padding: 2px !important;
+}
+
+
+/* Add border to weekday-highlighted background events */
+.fc-daygrid-day .fc-bg-event.weekday-highlight {
+  border: 1px solid #3788d8;
+  box-sizing: border-box;
+}
+
+
+/* ... (previous styles) ... */
+
+/* Styles for unavailable days (past days and days outside the event range) */
+.fc .fc-day.unavailable-day {
+  background-color: #f0f0f0;
+}
+
+.fc .fc-day.unavailable-day .fc-daygrid-day-top {
+  opacity: 0.5;
+}
+
+/* Styles for unavailable time slots */
+.unavailable-slot {
+  background-color: #f0f0f0;
+  color: #999;
+  text-align: center;
+  padding: 2px;
+  font-size: 10px;
+}
+
+.fc .fc-timegrid-slot-label {
+  font-size: 0.8em;
+}
+
+/* Style for unavailable time slots in week and day views */
+.fc .fc-timegrid-col.fc-day-past,
+.fc .fc-timegrid-col.unavailable-day {
+  background-color: #f0f0f0;
+}
+
+.fc .fc-timegrid-col.fc-day-past .fc-timegrid-col-frame,
+.fc .fc-timegrid-col.unavailable-day .fc-timegrid-col-frame {
+  opacity: 0.5;
+}
+
+.fc .fc-day.selected-day {
+  background-color: #e6f3ff !important;
+  border: 2px solid #3788d8 !important;
+}
+
+.fc .fc-day.selected-day .fc-daygrid-day-top {
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .hero-background {
+    height: 120px;
+    padding: 10px 15px;
+    padding-bottom: 20px;
+  }
+
+  .content-title {
+    font-size: 0.9rem;
+  }
+
+  .select-header {
+    font-size: 1rem;
+  }
+
+  .text-lg {
+    font-size: 1.25rem;
+  }
+
+  .text-base,
+  #text-base {
+    font-size: 0.875rem;
+  }
+
+  .flex-gap {
+    gap: 0.35rem;
+  }
+  .description-info {
+    padding: 10px;
+  }
+  .bottom-calender-booking {
+    padding: 10px;
+  }
+}

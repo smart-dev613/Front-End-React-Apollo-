@@ -1,0 +1,20 @@
+# apiVersion: extensions/v1beta1
+# kind: Ingress
+# metadata:
+#   name: {{.Release.Name}}-ingress
+#   annotations:
+#     kubernetes.io/ingress.class: nginx
+#     cert-manager.io/cluster-issuer: "letsencrypt-prod"
+# spec:
+#   rules:
+#   - host: {{.Release.Name}}.synkd.life
+#     http:
+#       paths:
+#       - backend:
+#           serviceName: {{.Release.Name}}
+#           servicePort: {{.Release.Name}}
+#         path: /
+#   tls:
+#   - secretName: {{.Release.Name}}
+#     hosts:
+#       - {{.Release.Name}}.synkd.life

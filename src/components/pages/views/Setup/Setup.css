@@ -1,0 +1,10 @@
+
+@media only screen and (min-width:350px) and (max-width:480px){
+    .heading1{
+        font-size: 20px!important;
+    }
+    label{
+        font-size: 10px!important;
+    }
+}
+
